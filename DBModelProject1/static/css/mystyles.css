@@ -1,0 +1,21 @@
+h1{
+    color:Blue;
+    border:2px Solid Brown;
+    text-align: center;
+    background-color: yellow;
+}
+table{
+    border: 2px Solid Blue;
+    background-color: beige;
+    text-align: center;
+}
+caption{
+    border-top: 2px Solid Blue;
+    border-left: 2px Solid Blue;
+    border-right: 2px Solid Blue;
+    background-color: yellow;
+    text-align: center;
+    font-size: 23px;
+    font-weight: bolder;
+    color:Green;
+}

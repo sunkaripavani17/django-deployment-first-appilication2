@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Company DBModel</title>
+     <link rel="stylesheet" href="{% static 'css/mystyles.css' %}" />
+</head>
+<body>
+    <h1>the companies list is ::</h1>
+    <hr/>
+    <br/>
+    {% if complist %}
+    <table border="2" width="350">
+        <caption>
+            company details
+        </caption>
+        <thead>
+            <th>company-ID</th>
+            <th>company-name</th>
+            <th>total emps</th>
+            <th>company-addr</th>
+            <th>share value</th>
+        </thead>
+        <tbody>
+            {% for comp in complist %}
+            <tr>
+            <td>{{ comp.compid }}</td>
+            <td>{{ comp.compname }}</td>
+            <td>{{ com.noofemps }}</td>
+            <td>{{ comp.compaddr }}</td>
+            <td>{{ comp.compaddr }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    {% else %}
+        <p>*** no copany records found ***</p>
+    {% endif %}
+</body>
+</html>
